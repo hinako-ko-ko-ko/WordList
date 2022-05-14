@@ -13,6 +13,12 @@
 		B898FB1F282F7BEA000A98AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B898FB1D282F7BEA000A98AE /* Main.storyboard */; };
 		B898FB21282F7BED000A98AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B898FB20282F7BED000A98AE /* Assets.xcassets */; };
 		B898FB24282F7BED000A98AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B898FB22282F7BED000A98AE /* LaunchScreen.storyboard */; };
+		B898FB7C282F9D45000A98AE /* word_blank.png in Resources */ = {isa = PBXBuildFile; fileRef = B898FB79282F9D45000A98AE /* word_blank.png */; };
+		B898FB7D282F9D45000A98AE /* fin.png in Resources */ = {isa = PBXBuildFile; fileRef = B898FB7A282F9D45000A98AE /* fin.png */; };
+		B898FB7E282F9D45000A98AE /* title_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = B898FB7B282F9D45000A98AE /* title_logo.png */; };
+		B898FB80282FA273000A98AE /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B898FB7F282FA273000A98AE /* QuestionViewController.swift */; };
+		B898FB82282FA281000A98AE /* FinishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B898FB81282FA281000A98AE /* FinishViewController.swift */; };
+		B898FB86282FA2A3000A98AE /* AddViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B898FB85282FA2A3000A98AE /* AddViewViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		B898FB20282F7BED000A98AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B898FB23282F7BED000A98AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B898FB25282F7BED000A98AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B898FB79282F9D45000A98AE /* word_blank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = word_blank.png; sourceTree = "<group>"; };
+		B898FB7A282F9D45000A98AE /* fin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fin.png; sourceTree = "<group>"; };
+		B898FB7B282F9D45000A98AE /* title_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title_logo.png; sourceTree = "<group>"; };
+		B898FB7F282FA273000A98AE /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
+		B898FB81282FA281000A98AE /* FinishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishViewController.swift; sourceTree = "<group>"; };
+		B898FB85282FA2A3000A98AE /* AddViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +68,29 @@
 		B898FB16282F7BEA000A98AE /* WordList */ = {
 			isa = PBXGroup;
 			children = (
+				B898FB78282F9D45000A98AE /* WordList素材 */,
 				B898FB17282F7BEA000A98AE /* AppDelegate.swift */,
 				B898FB19282F7BEA000A98AE /* SceneDelegate.swift */,
-				B898FB1B282F7BEA000A98AE /* ViewController.swift */,
 				B898FB1D282F7BEA000A98AE /* Main.storyboard */,
 				B898FB20282F7BED000A98AE /* Assets.xcassets */,
 				B898FB22282F7BED000A98AE /* LaunchScreen.storyboard */,
 				B898FB25282F7BED000A98AE /* Info.plist */,
+				B898FB1B282F7BEA000A98AE /* ViewController.swift */,
+				B898FB7F282FA273000A98AE /* QuestionViewController.swift */,
+				B898FB81282FA281000A98AE /* FinishViewController.swift */,
+				B898FB85282FA2A3000A98AE /* AddViewViewController.swift */,
 			);
 			path = WordList;
+			sourceTree = "<group>";
+		};
+		B898FB78282F9D45000A98AE /* WordList素材 */ = {
+			isa = PBXGroup;
+			children = (
+				B898FB79282F9D45000A98AE /* word_blank.png */,
+				B898FB7A282F9D45000A98AE /* fin.png */,
+				B898FB7B282F9D45000A98AE /* title_logo.png */,
+			);
+			path = "WordList素材";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +151,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B898FB7C282F9D45000A98AE /* word_blank.png in Resources */,
+				B898FB7E282F9D45000A98AE /* title_logo.png in Resources */,
 				B898FB24282F7BED000A98AE /* LaunchScreen.storyboard in Resources */,
 				B898FB21282F7BED000A98AE /* Assets.xcassets in Resources */,
+				B898FB7D282F9D45000A98AE /* fin.png in Resources */,
 				B898FB1F282F7BEA000A98AE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,9 +167,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B898FB82282FA281000A98AE /* FinishViewController.swift in Sources */,
 				B898FB1C282F7BEA000A98AE /* ViewController.swift in Sources */,
 				B898FB18282F7BEA000A98AE /* AppDelegate.swift in Sources */,
+				B898FB80282FA273000A98AE /* QuestionViewController.swift in Sources */,
 				B898FB1A282F7BEA000A98AE /* SceneDelegate.swift in Sources */,
+				B898FB86282FA2A3000A98AE /* AddViewViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
